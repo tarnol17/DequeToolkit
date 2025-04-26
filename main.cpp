@@ -13,5 +13,18 @@
 using namespace std;
 
 int main(){
-    cout << "hello";
+    Deque d;
+
+    d.push_back(10);
+    d.push_back(20);
+    d.push_front(5);
+
+    cout << d.front() << endl; 
+    cout << d.back() << endl; 
+    cout << d.size() << endl;
+    d.pop_front();
+    cout << d.front() << endl; 
+    d.pop_back();
+    cout << d.back() << endl; 
+
 }
