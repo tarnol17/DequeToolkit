@@ -17,7 +17,11 @@ private:
     int blockCount;
     int frontIndex;
     int backIndex;
-    int numElements;
+    int count;
+
+    void growFront();
+    void growBack();
+    void growBlockmap();
 
 public:
     Deque();
@@ -25,8 +29,8 @@ public:
 
     void push_front(int value);
     void push_back(int value);
-    int pop_front();
-    int pop_back();
+    void pop_front();
+    void pop_back();    
 
     int front();
     int back();
