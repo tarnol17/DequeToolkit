@@ -15,6 +15,8 @@ private:
     int** blockmap;
     int blockSize;
     int blockCount;
+    int frontBlock;
+    int backBlock;
     int frontIndex;
     int backIndex;
     int count;
